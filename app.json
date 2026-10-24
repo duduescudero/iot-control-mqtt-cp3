@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "IoT Control",
+    "slug": "iot-control-mqtt-cp3",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "iotcontrol",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fiap.iotcontrolcp3",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "Conectar ao broker MQTT local de demonstração do ambiente IoT.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsLocalNetworking": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.fiap.iotcontrolcp3",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0B121A"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "name": "IoT Control"
+    },
+    "plugins": [
+      "./plugins/withLocalWebSocket.cjs"
+    ]
+  }
+}
